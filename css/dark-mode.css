@@ -1,0 +1,98 @@
+/* css/styles.css */
+/* Your common styles for both light and dark modes */
+/* ... */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #000;
+    color: #000; /* Common text color for both modes */
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff; /* Background color for light mode */
+}
+
+h1 {
+    color: #ffffff;
+}
+
+p {
+    color: #ffffff;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0; /* Background color for text input */
+    color: #ffffff; /* Text color for text input */
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#videoPlayer {
+    margin: 20px 0;
+}
+
+.switch-button {
+    background-color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+    width: 50px;
+    height: 30px;
+    position: relative;
+}
+
+.switch-button .moon, .switch-button .sun {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: transform 0.5s;
+}
+
+.switch-button .moon {
+    background-color: #202020;
+    left: 5px;
+}
+
+.switch-button .sun {
+    background-color: #FFD700;
+    right: 5px;
+}
+
+#videoDescription {
+    background-color: #f0f0f0; /* Background color for the description */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#descriptionText {
+    color: #000; /* Text color for the description */
+}
