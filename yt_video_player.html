@@ -1,35 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube Video Player</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css" id="styles">
-
+    <link rel="stylesheet" href="css/styles.css" id="styles">
     <script src="js/script.js" defer></script>
 </head>
 <body theme="light">
-    <h1>YouTube Video Player</h1>
+    <header>
+        <h1>YouTube Video Player</h1>
+        <p>Enter a YouTube video URL:</p>
+    </header>
 
-    <p>Enter a YouTube video URL:</p>
+    <main>
+        <section id="input-section">
+            <label for="youtubeURL" class="visually-hidden">YouTube URL</label>
+            <input type="text" id="youtubeURL" placeholder="Enter YouTube URL">
+            <button onclick="playVideo()">Play Video</button>
+        </section>
 
-    <input type="text" id="youtubeURL" placeholder="Enter YouTube URL">
-    <button onclick="playVideo()">Play Video</button>
+        <section id="theme-toggle-section" class="transparent-container">
+            <input type="checkbox" id="theme-toggle">
+            <label for="theme-toggle"></label>
+        </section>
 
-    <!-- <button id="modeToggle">Toggle Dark Mode</button> -->
+        <section id="video-section">
+            <div id="videoPlayer"></div>
+        </section>
+    </main>
 
-    <div class="transparent-container" >
-        <input type="checkbox" id="theme-toggle">
-        <label for="theme-toggle"></label>
-      </div>
-
-    <!-- <button id="modeToggle" class="switch-button">
-        <div class="moon"></div>
-        <div class="sun"></div>
-    </button> -->
-
-    <div id="videoPlayer"></div>
-    <!-- <textarea id="descriptionText" rows="10" cols="50" readonly></textarea> -->
-    
-    <!-- Load the YouTube IFrame Player API -->
     <script src="https://www.youtube.com/iframe_api"></script>
 </body>
 </html>

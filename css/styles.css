@@ -1,177 +1,43 @@
-/* css/styles.css */
-/* Your common styles for both light and dark modes */
-/* ... */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: white;
-    color: #ffffff; /* Common text color for both modes */
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    gap: 20px;
-    align-items: center;
-    height: 100vh;
-    color: #000;
-    user-select: none;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  height: 100vh;
+  margin: 0;
 }
 
-
-/* sun moon button  */
-
-body[theme=dark] {
-    background: #000;
-    color: #000000;
-  }
-  
-  #hybrid {
-    visibility: hidden;
-  }
-  
-  #theme-toggle {
-    visibility: hidden;
-  }
-  
-  #theme-toggle + label {
-    content: '';
-    display: inline-block;
-    cursor: pointer;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  #theme-toggle:not(:checked) + label {
-    background-color: gold;
-  }
-  
-  /* here is the moon icon */
-
-  #theme-toggle:checked + label {
-    background-color: transparent;
-    box-shadow: inset -18px -16px 1px 1px #ffffff; 
-  }
-  
-  .intro-text {
-    top: 180px;
-    font-size: 1.6em;
-    font-family: monospace;
-  } */
-  
-  /* [class*=text-] {
-    font-size: 1.2em;
-    font-weight: 600;
-    transition: color 500ms ease-in;
-  }
-  
-  body[theme=dark] {
-    .text-sun {
-      color: #ffffff;
-    }
-    .text-moon {
-      color: #ffffff;
-    }
-  }
-  
-  body[theme=light] {
-    .text-sun {
-      color: #ffffff;
-    }
-    .text-moon {
-      color: #ffffff;
-    }
-  }
-
-/* sun moon button  */
-
-
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    background-color: #fff; /* Background color for light mode */
-}
-
-h1 {
-    color: #333;
-}
-
-p {
-    color: #666;
+header {
+  margin-top: 20px;
 }
 
 input[type="text"] {
-    width: 60%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f0f0f0; /* Background color for text input */
-    color: #000; /* Text color for text input */
+  width: 60%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 button {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px 0;
-    transition: background-color 0.3s;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 #videoPlayer {
-    margin: 20px 0;
-}
-
-.switch-button {
-    background-color: #fff;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 5px;
-    width: 50px;
-    height: 30px;
-    position: relative;
-}
-
-.switch-button .moon, .switch-button .sun {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    transition: transform 0.5s;
-}
-
-.switch-button .moon {
-    background-color: #202020;
-    left: 5px;
-}
-
-.switch-button .sun {
-    background-color: #FFD700;
-    right: 5px;
-}
-
-#videoDescription {
-    background-color: #f0f0f0; /* Background color for the description */
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-#descriptionText {
-    color: #000; /* Text color for the description */
+  margin: 20px 0;
 }
